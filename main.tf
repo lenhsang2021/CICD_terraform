@@ -15,7 +15,7 @@ data "aws_ami" "ami" {
 
 resource "aws_instance" "ansible_server" {
   ami           = data.aws_ami.ami.id
-  instance_type = "t3.small"
+  instance_type = "t2.small"
 
   lifecycle {
     create_before_destroy = true
