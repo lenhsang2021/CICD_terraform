@@ -20,4 +20,7 @@ resource "aws_instance" "ansible_server" {
   lifecycle {
     create_before_destroy = true
   }
+  tags ={
+    "Name"="testcicd"
+  }
 }
