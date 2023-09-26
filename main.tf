@@ -21,6 +21,6 @@ resource "aws_instance" "ansible_server" {
     create_before_destroy = true
   }
   tags ={
-    "Name"="testcicd"
+    "Name"="testlan2 "
   }
 }
